@@ -1,0 +1,11 @@
+Designator,Comment,Footprint,Quantity
+J7,PUMP/BTN,JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical,1
+J10,DevKitJ1,PinSocket_1x22_P2.54mm_Vertical,1
+J2,CANA/B,JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical,1
+J6,TEMP,JST_XH_B5B-XH-A_1x05_P2.50mm_Vertical,1
+J4,OUT1-6,JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical,1
+J11,DevKitJ3,PinSocket_1x22_P2.54mm_Vertical,1
+J9,PololuD36V6F5,PinSocket_1x04_P2.54mm_Vertical,1
+J5,OUT7-12,JST_XH_B6B-XH-A_1x06_P2.50mm_Vertical,1
+"JP1,JP2",TERM,PinHeader_1x02_P2.54mm_Vertical,2
+J1,PWR,JST_XH_B2B-XH-A_1x02_P2.50mm_Vertical,1

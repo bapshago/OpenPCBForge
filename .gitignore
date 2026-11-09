@@ -1,0 +1,14 @@
+build/
+tools/
+.venv/
+__pycache__/
+*.egg-info/
+.env
+.env.local
+designs/generated/
+*-backups/
+# SKiDL run artifacts
+*.erc
+*.log
+*_sklib.py
+dist/
