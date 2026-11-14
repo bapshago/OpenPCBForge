@@ -208,6 +208,23 @@ hardware and firmware are also published on their own at
 - **`pcbnew` import errors:** the venv must use the same Python that KiCad was
   built against, with `--system-site-packages`.
 
+## Built on
+
+pcbforge is mostly glue between these projects, and wouldn't exist without them. Thank you
+to their authors and maintainers.
+
+| Project | What it does in pcbforge | License |
+|---|---|---|
+| [SKiDL](https://github.com/devbisme/skidl) by Dave Vandenbout | Runs the Python design file: parts, nets, the electrical rules check (ERC) and the netlist | MIT |
+| [KiCad](https://www.kicad.org) | The `pcbnew` Python API builds the board; `kicad-cli` runs DRC and writes Gerbers, drill and placement files; its symbol and footprint libraries supply every part | GPL-3.0-or-later; libraries CC-BY-SA 4.0 with an exception for designs that use them |
+| [Freerouting](https://github.com/freerouting/freerouting) | Autoroutes the board | GPL-3.0 |
+| [gerbonara](https://gitlab.com/gerbolyze/gerbonara) by jaseg and XenGi | Renders the Gerbers to an SVG preview | Apache-2.0 |
+| [Anthropic Python SDK](https://github.com/anthropics/anthropic-sdk-python) | The design agent's calls to Claude | MIT |
+
+They're installed separately (see Setup) and keep their own licenses. The footprint in
+`footprints/pcbforge.pretty` is a modified KiCad library footprint and stays under the KiCad
+libraries' license.
+
 ## Contributing
 
 pcbforge was written for one person's projects and shared in case it's useful to others.
@@ -220,5 +237,4 @@ without it).
 ## License
 
 MIT, see [LICENSE](LICENSE). The example board designs and fab files are covered too.
-pcbforge drives KiCad, Freerouting and SKiDL, which have their own licenses (GPL-3.0,
-GPL-3.0 and MIT); install them separately.
+The tools it builds on keep their own licenses: see Built on.
